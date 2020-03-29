@@ -1,5 +1,5 @@
 
-## sirio-doc
+## SIRIO OPEN SOURCE VENTILATOR
 
 
 <p align="center">
@@ -19,6 +19,10 @@ Todas las piezas caben en una impresora estándar con área de impresión de 200
 Las piezas mecánicas son varillas lisas de 8mm típica de reprap, tuercas y tornillos estándar
 La única pieza más complicada para conseguir es el husillo que nos ha proporcionado Igus. Para la versión Maker, estamos evaluando la posibilidad de usar un husillo con un paso amplio y  tener la posibilidad de cambiar los parámetros de velocidad desde la pantalla.
 
+<p align="center">
+<img src=https://github.com/SIRIO-VENTILATOR/sirio-doc/blob/master/maker_y_industrial.png width="600" align="center">
+</p>
+
 # Mecanica
 Despues de probar las ventajas del husillo. Nos dimos cuenta del handicap que tenia la geometria que estabamos trabajando. Cuando queriamos adaptar diferentes tipos de rees. Asi que nos hemos puesto manos a la obra. Y hemos rediseñado de nuevo por completo todo el sistema. 
 Ahora trabaja con una trayectoria vertical completamente. Por lo que no tenemos desplazamiento en el globo.
@@ -35,12 +39,14 @@ Tambien nos gustaria si no es mucho pedir que compartais la informacion de los p
 Bill of materials 
 
 placa base
+
+RAMPS + Arduino
    https://www.amazon.es/impresora-Controlador-Controller-Mega2560-disipador/dp/B07XV2YKG4/ref=sr_1_9?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-9
 
 display
    https://www.amazon.es/Kookye-Pantalla-controlador-adaptador-impresora/dp/B019SXNH1S/ref=sr_1_11?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-11
 
-sensor presion
+sensor de presion
    https://es.rs-online.com/mobile/p/sensores-de-presion/8369039/
 
 
@@ -79,6 +85,9 @@ El sistema de válvulas unidireccionales se realizó en una primera versión dir
 
 Válvula (cuerpo inferior):
 
+<p align="center">
+<img src=https://github.com/SIRIO-VENTILATOR/sirio-doc/blob/master/valve%202.jpeg width="300" align="center">
+</p>
 
 
 
@@ -87,14 +96,13 @@ Perimeters (Líneas perimetrales): 5
 Infill (Densidad de relleno): 50%
 
 Impresión sin soportes en la misma disposición que en la foto.
-
-
-
-
 
 
 Válvula (cuerpo superior):
 
+<p align="center">
+<img src=https://github.com/SIRIO-VENTILATOR/sirio-doc/blob/master/valve%20top.jpeg width="200" align="center">
+</p>
 
 
 
@@ -104,6 +112,9 @@ Infill (Densidad de relleno): 50%
 
 Impresión sin soportes en la misma disposición que en la foto.
 
+<p align="center">
+<img src=https://github.com/SIRIO-VENTILATOR/sirio-doc/blob/master/valve_inner.jpeg width="200" align="center">
+</p>
 
 
 
@@ -123,8 +134,9 @@ El obturador ha de completarse con una junta tórica de 19mm de Diámetro interi
 
 Collarín soporte:
 
-
-
+<p align="center">
+<img src=https://github.com/SIRIO-VENTILATOR/sirio-doc/blob/master/valve_support.jpeg width="200" align="center">
+</p>
 
 
 Layer height (Altura de capa): 0.2
