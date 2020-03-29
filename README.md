@@ -79,7 +79,7 @@ SETUP
 
 
 
-# Neumatica (Alberto)
+# Neumatica [ENLACE PARA DESCARGA](https://github.com/SIRIO-VENTILATOR/sirio-hardware/tree/master/SIRIO%20v5%20MAKER/VALVE)
 El sistema de válvulas unidireccionales se realizó en una primera versión directamente todo en PLA. Conforme fuimos avanzando, nos dimos cuenta de ciertos aspectos para mejorar tanto la impresión, como la estanqueidad del conjunto, tomando la decisión de incorporar una ranura para una junta tórica que asegurara el cierre hermético en la dirección de bloqueo, y mejorando la calidad del obturador disminuyendo la altura de capa en la impresión.El sistema ha sido diseñado con racores para tubo de 22mm flexible. Tras seis diseños sucesivos, logramos conseguir un sistema funcional que consta de las siguientes piezas y características:
 
 
@@ -146,3 +146,6 @@ Infill (Densidad de relleno): 50%
 Impresión sin soportes en la misma disposición que en la foto.
 
 
+
+
+CC-BY-SA 2020 Gianluca Pugliese, Nestor Fernandez, Javier Isabel, Alberto Carpintero
