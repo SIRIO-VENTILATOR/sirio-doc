@@ -1,6 +1,7 @@
+
 ## sirio-doc
 
-#Descripcion general 
+# Descripcion general 
 SIRIO es una variante de un respirador automatizado.
 Hemos decidido usar un movimiento lineal en vez que rotatorio para empujar el depósito de aire.
 El diseño es compacto y estamos trabajando en dos líneas paralelas:
@@ -13,7 +14,7 @@ Todas las piezas caben en una impresora estándar con área de impresión de 200
 Las piezas mecánicas son varillas lisas de 8mm típica de reprap, tuercas y tornillos estándar
 La única pieza más complicada para conseguir es el husillo que nos ha proporcionado Igus. Para la versión Maker, estamos evaluando la posibilidad de usar un husillo con un paso amplio y  tener la posibilidad de cambiar los parámetros de velocidad desde la pantalla.
 
-#Mecanica
+# Mecanica
 Despues de probar las ventajas del husillo. Nos dimos cuenta del handicap que tenia la geometria que estabamos trabajando. Cuando queriamos adaptar diferentes tipos de rees. Asi que nos hemos puesto manos a la obra. Y hemos rediseñado de nuevo por completo todo el sistema. 
 Ahora trabaja con una trayectoria vertical completamente. Por lo que no tenemos desplazamiento en el globo.
 Lo tenemos abrazado por una parte mas pequeña. Ojo esto es muy importante. Ya que permite al globo una deformacion tangencial. Sin probocar pliegues de donde se pueda iniciar una fisura. Por lo que este sistema es mas amable con las deformaciones que se producen en el mismo.
@@ -25,28 +26,39 @@ Tambien es bastante mas seguro ya que toda la mecanica se queda dentro de un caj
 El prototipo estara listo mañana. Y quedamos a la espera de colaboracion en cuanto a asesoramiento para desarrollar los sistemas de valvulas. Y sensores necesarios para poder convertir casi cualquier balon. En un respirador util para salvar vidas. 
 Tambien nos gustaria si no es mucho pedir que compartais la informacion de los parametros que necesitaremos programar y como gestionar todo eso ya que en ese sentidos estamos un poco parados. 
 
-#Electronica
-Bill of materials actual y futura
+# Electronica
+Bill of materials 
+
 placa base
-https://www.amazon.es/impresora-Controlador-Controller-Mega2560-disipador/dp/B07XV2YKG4/ref=sr_1_9?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-9
+   https://www.amazon.es/impresora-Controlador-Controller-Mega2560-disipador/dp/B07XV2YKG4/ref=sr_1_9?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-9
+
 display
-https://www.amazon.es/Kookye-Pantalla-controlador-adaptador-impresora/dp/B019SXNH1S/ref=sr_1_11?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-11
+   https://www.amazon.es/Kookye-Pantalla-controlador-adaptador-impresora/dp/B019SXNH1S/ref=sr_1_11?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=ramps&qid=1584969011&sr=8-11
 
 sensor presion
    https://es.rs-online.com/mobile/p/sensores-de-presion/8369039/
 
 
-#SOFTWARE
+# SOFTWARE
 
 
-MENU:
-Hola mundo
-Homing
-Offset botella
-velocidad
-START
+# MENU:
 
-#Neumatica (Alberto)
+```mermaid
+graph TD
+A[Turn on] -- Go to the Endstop --> B[Set the AMBU offset]
+B --> C{Wait 5 sec}
+C --> D(AMP)
+C --> E(IE_RATIO)
+C --> F(SPEED)
+C --> G(CYCLES)
+C --> H(DELAY)
+C --> I(START/STOP)
+
+```
+
+
+# Neumatica (Alberto)
 El sistema de válvulas unidireccionales se realizó en una primera versión directamente todo en PLA. Conforme fuimos avanzando, nos dimos cuenta de ciertos aspectos para mejorar tanto la impresión, como la estanqueidad del conjunto, tomando la decisión de incorporar una ranura para una junta tórica que asegurara el cierre hermético en la dirección de bloqueo, y mejorando la calidad del obturador disminuyendo la altura de capa en la impresión.El sistema ha sido diseñado con racores para tubo de 22mm flexible. Tras seis diseños sucesivos, logramos conseguir un sistema funcional que consta de las siguientes piezas y características:
 
 
