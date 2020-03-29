@@ -1,18 +1,20 @@
 
 ## sirio-doc
 
-![render](MEDIA/SIRIO_3D_logo.png)
 
+<p align="center">
+<img src=MEDIA/SIRIO_3D_logo.png width="200" align="center">
+</p>
 
 # Descripcion general 
 SIRIO es una variante de un respirador automatizado.
 Hemos decidido usar un movimiento lineal en vez que rotatorio para empujar el depósito de aire.
 El diseño es compacto y estamos trabajando en dos líneas paralelas:
-- VERSION INDUSTRIAL  fabricado en corte láser y doblado de acero mas piezas mecanizada en material sanitario 
+- [VESION INDUSTRIAL](https://github.com/SIRIO-VENTILATOR/sirio-hardware/tree/master/SIRIO%20v5%20INDUSTRIAL)  fabricado en corte láser y doblado de acero mas piezas mecanizada en material sanitario 
 Gracias al proceso de corte láser y doblado de chapa es posible fabricar rápidamente varios modelos al dia, el material es resistente a temperatura y se puede esterilizar.
 Se está trabajando en una electrónica custom.
 
-- VERSIÓN EMERGENCIA: Fabricado por impresión 3D y posiblemente corte laser 
+- [VESION MAKER](https://github.com/SIRIO-VENTILATOR/sirio-hardware/tree/master/SIRIO%20v5%20MAKER): Fabricado por impresión 3D y posiblemente corte laser 
 Todas las piezas caben en una impresora estándar con área de impresión de 200*200*200, la electrónica es una básica de impresora (arduino mega + ramps + display) pero estamos evaluando la posibilidad de fabricar una shield sencilla.
 Las piezas mecánicas son varillas lisas de 8mm típica de reprap, tuercas y tornillos estándar
 La única pieza más complicada para conseguir es el husillo que nos ha proporcionado Igus. Para la versión Maker, estamos evaluando la posibilidad de usar un husillo con un paso amplio y  tener la posibilidad de cambiar los parámetros de velocidad desde la pantalla.
@@ -47,18 +49,28 @@ sensor presion
 
 # MENU:
 
-```mermaid
-graph TD
-A[Turn on] -- Go to the Endstop --> B[Set the AMBU offset]
-B --> C{Wait 5 sec}
-C --> D(AMP)
-C --> E(IE_RATIO)
-C --> F(SPEED)
-C --> G(CYCLES)
-C --> H(DELAY)
-C --> I(START/STOP)
 
-```
+[Turn on] --> Go to the Endstop --> [Set the AMBU offset]
+
+SETUP
+
+--> (AMP)
+
+--> (IE_RATIO)
+
+--> (SPEED)
+
+--> (CYCLES)
+
+--> (DELAY)
+
+--> (START)
+
+--> {Wait 5 sec}
+
+--> (STOP)
+
+
 
 
 # Neumatica (Alberto)
