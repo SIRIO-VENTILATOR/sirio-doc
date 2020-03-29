@@ -1,6 +1,9 @@
 
 ## sirio-doc
 
+![render](MEDIA/SIRIO_3D_logo.png)
+
+
 # Descripcion general 
 SIRIO es una variante de un respirador automatizado.
 Hemos decidido usar un movimiento lineal en vez que rotatorio para empujar el depósito de aire.
