@@ -148,4 +148,12 @@ Impresión sin soportes en la misma disposición que en la foto.
 
 
 
-CC-BY-SA 2020 Gianluca Pugliese, Nestor Fernandez, Javier Isabel, Alberto Carpintero
+CC-BY-SA 2020 
+Gianluca Pugliese
+Néstor Fernández Gil
+Javier Isabel
+José Antonio García Martínez
+Alberto Carpintero Moreno
+Javie ortiz 
+Mario ferez
+Jose rodriguez
